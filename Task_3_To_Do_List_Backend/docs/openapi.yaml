@@ -1,0 +1,16 @@
+openapi: 3.0.3
+info: {title: To-Do List Backend, version: 1.0.0}
+paths:
+  /api/auth/register:
+    post: {summary: Register a user}
+  /api/auth/login:
+    post: {summary: Login and receive JWT}
+  /api/tasks:
+    get: {summary: Search/filter/paginate authenticated user's tasks}
+    post: {summary: Create task}
+  /api/tasks/{id}:
+    get: {summary: Retrieve task}
+    put: {summary: Update task}
+    delete: {summary: Delete task}
+  /api/tasks/{id}/status:
+    patch: {summary: Mark task completed or pending}
