@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info: {title: Contact Management System, version: 1.0.0}
+paths:
+  /api/contacts:
+    get: {summary: Search, sort and paginate contacts}
+    post: {summary: Create contact}
+  /api/contacts/{id}:
+    get: {summary: Get contact}
+    put: {summary: Update contact}
+    delete: {summary: Delete contact}
