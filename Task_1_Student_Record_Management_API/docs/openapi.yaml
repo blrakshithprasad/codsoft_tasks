@@ -1,0 +1,29 @@
+openapi: 3.0.3
+info:
+  title: Student Record Management API
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+paths:
+  /api/students:
+    get:
+      summary: List students with search/filter/sort/pagination
+    post:
+      summary: Create student
+  /api/students/{id}:
+    get: {summary: Get student}
+    put: {summary: Update student}
+    delete: {summary: Delete student}
+  /api/courses:
+    get: {summary: List courses}
+    post: {summary: Create course}
+  /api/courses/{id}:
+    get: {summary: Get course}
+    put: {summary: Update course}
+    delete: {summary: Delete course}
+  /api/enrollments:
+    get: {summary: List enrollments}
+    post: {summary: Create enrollment}
+  /api/enrollments/{id}:
+    get: {summary: Get enrollment}
+    delete: {summary: Delete enrollment}
